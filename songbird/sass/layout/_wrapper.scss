@@ -1,0 +1,27 @@
+.wrapper {
+  max-width: $content-width;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.main {
+  background-color: $color-section;
+  // background-image: url(../../assets/img/footer-bg.png);
+}
+
+.main__wrapper {
+  padding-top: 30px;
+}
+
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

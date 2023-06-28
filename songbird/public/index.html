@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link type="image/png" sizes="32x32" rel="icon" href="./favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+  <title>Songbird</title>
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper header__wrapper">
+      <div>
+        <h1 class="header__title">Welcome to Songbird</h1>
+        <h5 class="hader__score">Score:
+          <span class="score">0</span>
+        </h5>
+      </div>
+      <div>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#"><img src="../assets/img/icon-raven.png" alt="raven" width="40" height="40">Разминка</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="../assets/img/icon-sparrow.png" alt="sparrow" width="40" height="40">Воробьиные</a>
+          
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="../assets/img/icon-hoopoe.png" alt="hoopoe" width="40" height="40">Лесные птицы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="../assets/img/icon-bird.png" alt="bird" width="40" height="40">Певчие птицы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="../assets/img/icon-eagle.png" alt="eagle" width="40" height="40">Хищные птицы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="../assets/img/icon-penguin.png" alt="penguin" width="40" height="40">Морские птицы</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="wrapper main__wrapper">
+      <div class="random-bird">
+        <img class="secret-bird" src="../assets/img/question.png" alt="question" width="170" height="170">
+        <div class="guesing-bird">
+          <div class="secret-name">??????</div>
+          <div class="audio-player">
+            <audio class="audio" src="#"></audio>
+            <div class="controls">
+              <div class="time-bar">
+                <div class="progress__container">
+                  <div class="progress"></div>
+                </div>
+                <!-- <div class="time-bar_circle"></div> -->
+                <div class="time-bar_time-info">
+                  <div class="current-time">00:00</div>
+                  <div class="time-duration">00:00</div>
+                </div>
+                <div class="play-button">
+                  <img class="play-src" src="../assets/img/play.png" alt="play" width="70" height="70">
+                </div>
+                <div class="volume__container">
+                  <img src="../assets/img/volume.png" alt="volume" width="30" height="30">
+                  <input type="range" min="1" max="100" value ="99" id="volume_slider">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="birds columns">
+          <div class="birds__options first-column">
+            <ul class="birds__list"></ul>
+            <button class="button__answer button">Ответить</button>
+          </div>
+          <div class="birds__answer second-column">
+            <div class="birds__card">
+              <div class="birds__info">
+              <img class="secret-bird secret-bird_option" src="../assets/img/question.png" alt="question" width="120" height="120">
+                <div class="audio-player audio-player-options">
+                <audio class="audio audio-options" src="#"></audio>
+                <div class="controls">
+                  <div class="time-bar">
+                    <div class="progress__container progress__container-options">
+                      <div class="progress progress-options"></div>
+                    </div>
+                    <div class="time-bar_time-info">
+                      <div class="current-time current-time-options">00:00</div>
+                      <div class="time-duration time-duration-options">00:00</div>
+                    </div>
+                    <div class="play-button play-button-options">
+                      <img class="play-src play-src-options" src="../assets/img/play.png" alt="play" width="40" height="40">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h4 class="birds__title">Послушай плеер и выбери из списка птицу, которая соответствует пению.</h4>
+            <span class="birds__title_latin"></span>
+              <span class="birds__description">
+                
+              </span>
+            </div>
+          </div>
+      </div>
+      <div class="level__button">
+        <button class="button" id="next-level">Next Level</button>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal__overlay">
+        <div class="modal__window">
+          <div class="modal__content">
+            <p class="modal__title">Давай с тобой сыграем.. Слушай плеер и выбирай птицу из списка, проверим как хорошо ты знаешь пение птиц. Удачи!</p>
+            <img src="../assets/img/bird.png" alt="bird">
+          </div>
+          <div class="modal__button">
+            <button class="button" id="modal-button">ОК</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="wrapper footer__wrapper">
+      <div class="footer__link">
+        <img src="../assets/img/icon-github.png" width="25" height="25" alt="Icon GitHub">
+          <a class="footer__text" href="https://github.com/tarasovamary"> My GitHub </a>
+      </div>
+      <div>
+          <a href="https://rs.school/js/">
+              <img src="../assets/img/icon-rs_school.svg" width="100" height="100" alt="Icon RSSchool"> </a>
+      </div>
+      <div>2022</div>
+    </div>
+</footer>
+</body>
+<script type="module" src="./index.js"></script>
+</html>

@@ -1,0 +1,13 @@
+.footer {
+  background-color: $color-section;
+}
+
+.footer__text {
+  color: black;
+  outline: none;
+  text-decoration: none;
+}
+
+.footer__text:hover {
+ color: $color-hover-text;
+}

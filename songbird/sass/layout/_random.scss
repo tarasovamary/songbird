@@ -1,0 +1,33 @@
+.random-bird {
+  @include columns (70%);
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 30px 30px;
+  margin-bottom: 30px;
+}
+.random-bird {
+  @include media-tablet {
+    @include columns (100%);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 15px 15px;
+    }
+
+}
+
+.secret-bird {
+  flex-basis: 0%;
+  border-radius: 5px;
+  @include media-tablet {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.secret-name {
+  font-size: 2.1rem;
+  padding-bottom: 10px;
+}
+
+

@@ -1,0 +1,39 @@
+.birds__options {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.birds__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex-basis: 100%;
+}
+
+.birds__item {
+  padding: 15px;
+  font-size: 1.8rem;
+}
+
+.birds__item:hover {
+  background-color: rgb(114, 224, 118, 0.5);
+  border-radius: 10px;
+  color: $color-text;
+}
+
+.birds__item:active {
+  background-color: $color-hover-button;
+  color: $color-hover-text;
+}
+
+.birds {
+  margin-bottom: 30px;
+}
+
+label {
+  cursor: pointer;
+}

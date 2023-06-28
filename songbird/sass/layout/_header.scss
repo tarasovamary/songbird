@@ -1,0 +1,21 @@
+.header {
+  background-image: url(../assets/img/birds-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+  width: 100%;
+  display: flex;
+}
+
+.hader__score {
+  background-color: rgba(241, 203, 185, 0.5);
+  border-radius: 7px;
+  padding: 5px;
+  text-align: center;
+}
+
+.header__title {
+  padding: 45px 0 10px;
+  text-align: center;
+}
